@@ -1,0 +1,37 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  font-size: 2rem;
+  color: rgb(84, 79, 74);
+  padding: 1rem 5rem;
+  background: rgb(255, 248, 236);
+  border-radius: 0.5rem;
+  transition: all 0.5s;
+}
+
+.button:active {
+  background: rgb(255, 228, 206);
+}
+
+.confetti {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  animation: confetti-fall linear infinite;
+  /* transform-origin: top left; */
+}
+
+@keyframes confetti-fall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+  }
+}
